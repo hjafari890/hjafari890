@@ -6,6 +6,7 @@
 
 <br/>
 
+[![Website](https://img.shields.io/badge/Website-hesamjafari.com-1a3a5c?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hesamjafari.com/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-hesam--jafari-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hesam-jafari/)
 [![Location](https://img.shields.io/badge/📍%20Oulu-Finland-1a3a5c?style=for-the-badge)](https://en.wikipedia.org/wiki/Oulu)
 [![University](https://img.shields.io/badge/University%20of%20Oulu-MSc%20Biomedical%20Eng%20%7C%20IoT-003580?style=for-the-badge)](https://www.oulu.fi/en)
@@ -20,7 +21,7 @@ Biomedical engineer focused on the **full embedded development cycle** — hardw
 
 ```
 Hardware:   ESP32 · Raspberry Pi · Pico W · Op-Amps · PCB Assembly (EasyEDA)
-Firmware:   MicroPython · C · Arduino · MQTT · FreeRTOS
+Firmware:   MicroPython · C / C++ · Arduino · Kotlin · MQTT · FreeRTOS
 Edge AI:    TinyML · Signal Processing · FFT · Random Forest · scikit-learn
 Infra:      Docker · MQTT broker · Cloud/Edge hybrid pipelines
 Simulation: COMSOL FEA · MATLAB · OriginLab
@@ -29,70 +30,57 @@ Test Bench: Oscilloscope · Spectrum Analyzer · LCR Meter · Function Generator
 
 ---
 
-## 🚀 Projects
+## 🚀 Featured Projects
+
+### 😴 [SnoreSense - Wearable Sleep Health & Snore Monitor](https://github.com/hjafari890/SnoreSense)
+> Real-time audio analysis and sleep posture tracking on ESP32 microcontrollers.
+
+- **FFT-based** audio analysis pipeline running on-device for snore detection.
+- Multi-axis IMU sensor fusion for accurate sleep position classification.
+- Compact hardware design with BLE data streaming.
+
+`ESP32` `FFT` `Signal Processing` `BLE` `Biomedical` `C++`
+
+---
+
+### 🧠 [NeuroStream - Hybrid Cloud EEG Pipeline](https://github.com/hjafari890/NeuroStream)
+> Docker and MQTT architecture for real-time EEG stream ingestion and QoS benchmarking.
+
+- End-to-end telemetry pipeline: EEG ingestion → edge filtering → cloud sync.
+- Benchmarked network latency and QoS levels across cloud/edge topologies.
+- Fully containerized with **Docker** for reproducible research deployment.
+
+`Docker` `MQTT` `EEG` `Cloud/Edge` `Python` `QoS`
+
+---
+
+### 📱 [Mobile Computing Final Project](https://github.com/hjafari890/MobileComputing-final-project)
+> Native Android application built independently from scratch.
+
+- Developed **100% manually** to master Android architecture, lifecycle management, and UI design.
+- Features clean separation of concerns, robust background services, and responsive layout.
+
+`Android` `Kotlin` `Mobile Computing` `Clean Architecture`
+
+---
 
 ### 🦶 Edge AI Step Counter & Fall Detector
-> Low-power wearable sensor node with real-time inference running on-device
+> Low-power wearable sensor node with real-time inference running on-device.
 
-- Deployed **TinyML model** on Raspberry Pi Pico W — no cloud dependency
-- Accelerometer data preprocessed on-chip; inference under 10ms latency
-- Designed for continuous battery-powered operation
+- Deployed **TinyML model** on Raspberry Pi Pico W — no cloud dependency.
+- Accelerometer data preprocessed on-chip with under 10ms latency.
 
 `TinyML` `Pico W` `MicroPython` `Wearables` `Edge Inference`
 
 ---
 
 ### 💨 Distributed H₂ Gas Monitoring System
-> Multi-node leak detection with an AI-monitored backend
+> Multi-node leak detection with an AI-monitored backend.
 
-- Sensor nodes stream readings over **MQTT** to a Raspberry Pi 5 backend
-- ML model flags anomalies and triggers alerts in real-time
-- Designed for continuous industrial deployment
+- Sensor nodes stream readings over **MQTT** to a Raspberry Pi backend.
+- ML model flags anomalies and triggers real-time industrial alerts.
 
-`IoT` `MQTT` `Raspberry Pi 5` `Python` `Anomaly Detection`
-
----
-
-### 😴 Wearable Sleep Health Monitor
-> Real-time snoring and sleep position tracker on ESP32
-
-- **FFT-based** audio analysis pipeline running fully on-device
-- Multi-axis IMU fusion for sleep position classification
-- Compact form factor with BLE data export
-
-`ESP32` `FFT` `Signal Processing` `BLE` `Biomedical`
-
----
-
-### ☁️ Hybrid Cloud EEG Workload Pipeline
-> Docker/MQTT architecture for real-time EEG monitoring and QoS testing
-
-- End-to-end pipeline: EEG ingestion → edge processing → cloud sync
-- Benchmarked QoS levels and latency across cloud/edge topologies
-- Containerized with **Docker** for reproducible deployment
-
-`Docker` `MQTT` `EEG` `Cloud/Edge` `Python`
-
----
-
-### 📡 LTE Jammer Detector (SDR)
-> Software Defined Radio monitoring station for RF interference detection
-
-- Combined **Random Forest classifier** with Kurtosis & Entropy features
-- Real-time spectrum scanning using SDR hardware
-- Reliable detection of LTE jamming patterns in live environments
-
-`SDR` `Python` `scikit-learn` `Random Forest` `Signal Processing`
-
----
-
-### 🌐 Network Latency Simulation (Cloud/Edge)
-> Simulated distributed Cloud and Edge architectures for IoT optimization
-
-- Modeled compute offloading trade-offs across topologies
-- Optimized latency for distributed sensor network designs
-
-`Network Simulation` `Edge Computing` `Cloud` `IoT Architecture`
+`IoT` `MQTT` `Raspberry Pi` `Python` `Anomaly Detection`
 
 ---
 
@@ -110,17 +98,16 @@ Test Bench: Oscilloscope · Spectrum Analyzer · LCR Meter · Function Generator
 **Languages & AI/ML**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white)
 ![TinyML](https://img.shields.io/badge/TinyML-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 
-**Infrastructure**
+**Infrastructure & Tools**
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white)
-
-**Design & Simulation**
-
 ![COMSOL](https://img.shields.io/badge/COMSOL-FEA-1a3a5c?style=flat-square)
 ![EasyEDA](https://img.shields.io/badge/EasyEDA-PCB%20Design-brightgreen?style=flat-square)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=latex&logoColor=white)
@@ -148,6 +135,7 @@ Contributing to the **Formula Student Oulu** team at University of Oulu — MCU 
 
 <div align="center">
 
+[![Website](https://img.shields.io/badge/Visit%20Website-hesamjafari.com-1a3a5c?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hesamjafari.com/)
 [![LinkedIn](https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hesam-jafari/)
 [![Email](https://img.shields.io/badge/Hjafari25%40student.oulu.fi-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Hjafari25@student.oulu.fi)
 
